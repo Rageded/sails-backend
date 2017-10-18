@@ -25,7 +25,7 @@ module.exports.waterlock = {
     {
       name:'waterlock-local-auth',
       passwordReset:{
-        tokens: false,
+        tokens: true,
         mail: {
           protocol: 'SMTP',
           options:{
@@ -79,7 +79,7 @@ module.exports.waterlock = {
   jsonWebTokens:{
 
     // CHANGE THIS SECRET
-    secret: 'this is my secret',
+    secret: 'superSecret',
     expiry:{
       unit: 'days',
       length: '7'
